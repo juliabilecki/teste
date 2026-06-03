@@ -3,70 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Blog</title>
+    <title>InfoHub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <div class="container">
-        <h1>Meu Blog</h1>
-        <nav>
-            <a href="#">Início</a>
-            <a href="#">Artigos</a>
-            <a href="#">Tecnologia</a>
-            <a href="#">Contato</a>
-        </nav>
-    </div>
+    <h1>InfoHub</h1>
+    <p>Informações rápidas, organizadas e acessíveis.</p>
 </header>
 
-<section class="hero">
-    <div class="container">
-        <h2>Bem-vindo ao Meu Blog</h2>
-        <p>Compartilhando conhecimento, tecnologia e ideias.</p>
-    </div>
-</section>
+<nav>
+    <a href="#noticias">Notícias</a>
+    <a href="#tecnologia">Tecnologia</a>
+    <a href="#curiosidades">Curiosidades</a>
+</nav>
 
-<main class="container">
+<div class="container">
 
-    <article class="post">
-        <img src="https://picsum.photos/800/400?random=1" alt="">
-        <div class="content">
-            <h2>Como criar um site moderno com HTML e CSS</h2>
-            <p>
-                Aprenda os conceitos básicos para criar páginas bonitas,
-                responsivas e profissionais.
-            </p>
-            <a href="#">Ler mais →</a>
+    <section id="noticias" class="section">
+        <h2>Últimas Notícias</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Título da Notícia</h3>
+                <p>Resumo curto da notícia para informar o visitante de forma rápida e clara.</p>
+            </div>
+
+            <div class="card">
+                <h3>Atualização Importante</h3>
+                <p>Texto descritivo com as informações mais relevantes sobre o assunto.</p>
+            </div>
+
+            <div class="card">
+                <h3>Destaque do Dia</h3>
+                <p>Conteúdo resumido e objetivo para facilitar a leitura.</p>
+            </div>
         </div>
-    </article>
+    </section>
 
-    <article class="post">
-        <img src="https://picsum.photos/800/400?random=2" alt="">
-        <div class="content">
-            <h2>As tendências do desenvolvimento web</h2>
-            <p>
-                Descubra as tecnologias que estão moldando a internet moderna.
-            </p>
-            <a href="#">Ler mais →</a>
+    <section id="tecnologia" class="section">
+        <h2>Tecnologia</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Inteligência Artificial</h3>
+                <p>Novidades e tendências sobre IA e automação.</p>
+            </div>
+
+            <div class="card">
+                <h3>Desenvolvimento Web</h3>
+                <p>Dicas, frameworks e tecnologias modernas.</p>
+            </div>
         </div>
-    </article>
+    </section>
 
-    <article class="post">
-        <img src="https://picsum.photos/800/400?random=3" alt="">
-        <div class="content">
-            <h2>Dicas para melhorar o SEO do seu blog</h2>
-            <p>
-                Técnicas simples para aumentar o alcance do seu conteúdo.
-            </p>
-            <a href="#">Ler mais →</a>
+    <section id="curiosidades" class="section">
+        <h2>Curiosidades</h2>
+
+        <div class="card">
+            <h3>Você Sabia?</h3>
+            <p>O primeiro site da internet foi publicado em 1991 e continua acessível até hoje.</p>
         </div>
-    </article>
+    </section>
 
-</main>
+</div>
 
 <footer>
-    <p>© 2026 Meu Blog - Todos os direitos reservados.</p>
+    <p>© 2026 InfoHub - Todos os direitos reservados.</p>
 </footer>
 
 </body>
