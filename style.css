@@ -6,13 +6,13 @@
 }
 
 body {
-    background: #f4f6f9;
-    color: #333;
+    background: #10490d;
+    color: hsl(124, 93%, 94%);
 }
 
 header {
-    background: linear-gradient(135deg, #2563eb, #1e40af);
-    color: white;
+    background:(rgb(234, 249, 235);
+    color:#10490d;
     padding: 60px 20px;
     text-align: center;
 }
