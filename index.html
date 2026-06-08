@@ -3,74 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concurso Agrinho</title>
+    <title>Blog Agrinho - Agronegócio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Concurso Agrinho 2026</h1>
-        <p>Participação, educação e cidadania no campo!</p>
-    </header>
+<header>
+    <h1>Blog Agrinho</h1>
+    <p>Descubra o mundo do agronegócio e da sustentabilidade no campo!</p>
+</header>
 
-    <nav>
-        <button onclick="mostrarConteudo('sobre')">Sobre o Concurso</button>
-        <button onclick="mostrarConteudo('inscricao')">Inscrição</button>
-        <button onclick="mostrarConteudo('contato')">Contato</button>
-    </nav>
+<nav>
+    <button onclick="filtrarCategoria('todos')">Todos</button>
+    <button onclick="filtrarCategoria('agricultura')">Agricultura</button>
+    <button onclick="filtrarCategoria('pecuaria')">Pecuária</button>
+    <button onclick="filtrarCategoria('tecnologia')">Tecnologia</button>
+</nav>
 
-    <section id="conteudo">
+<main id="blog-posts">
 
-        <div id="sobre">
-            <h2>Sobre o Concurso Agrinho</h2>
-            <p>
-                O Concurso Agrinho incentiva crianças e jovens a refletirem
-                sobre cidadania, meio ambiente e desenvolvimento sustentável.
-            </p>
-        </div>
+    <article class="post" data-categoria="agricultura">
+        <h2>Como aumentar a produtividade no campo</h2>
+        <p>Aprenda técnicas modernas de agricultura sustentável...</p>
+    </article>
 
-        <div id="inscricao" class="hidden">
-            <h2>Inscrição</h2>
+    <article class="post" data-categoria="pecuaria">
+        <h2>Melhores práticas na criação de gado</h2>
+        <p>Dicas para manejo eficiente e sustentável de animais...</p>
+    </article>
 
-            <form onsubmit="enviarFormulario(event)">
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" required><br><br>
+    <article class="post" data-categoria="tecnologia">
+        <h2>Inovações tecnológicas no agronegócio</h2>
+        <p>Como drones e sensores estão transformando o campo...</p>
+    </article>
 
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" required><br><br>
+</main>
 
-                <button type="submit">Enviar Inscrição</button>
-            </form>
-        </div>
+<section id="contato">
+    <h2>Contato</h2>
+    <form onsubmit="enviarFormulario(event)">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" required><br><br>
 
-        <div id="contato" class="hidden">
-            <h2>Contato</h2>
-            <p>Email: contato@agrinho.com.br</p>
-            <p>Telefone: (41) 99999-9999</p>
-        </div>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" required><br><br>
 
-    </section>
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" rows="4" required></textarea><br><br>
 
-    <footer>
-        <p>© 2026 Concurso Agrinho</p>
-    </footer>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
 
-    <script>
-        function mostrarConteudo(secao) {
-            const secoes = ["sobre", "inscricao", "contato"];
+<footer>
+    <p>© 2026 Blog Agrinho</p>
+</footer>
 
-            secoes.forEach(item => {
-                document.getElementById(item).classList.add("hidden");
-            });
-
-            document.getElementById(secao).classList.remove("hidden");
-        }
-
-        function enviarFormulario(event) {
-            event.preventDefault();
-            alert("Inscrição enviada com sucesso!");
-        }
-    </script>
-
+<script src="script.js"></script>
 </body>
 </html>
