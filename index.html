@@ -3,62 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Agrinho - Agronegócio</title>
+    <title>Meu Site Bonito</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Blog Agrinho</h1>
-    <p>Descubra o mundo do agronegócio e da sustentabilidade no campo!</p>
-</header>
+<header>Meu Site Bonito</header>
 
-<nav>
-    <button onclick="filtrarCategoria('todos')">Todos</button>
-    <button onclick="filtrarCategoria('agricultura')">Agricultura</button>
-    <button onclick="filtrarCategoria('pecuaria')">Pecuária</button>
-    <button onclick="filtrarCategoria('tecnologia')">Tecnologia</button>
-</nav>
+<main>
+    <button class="btn" onclick="showInfo('info1')">Sobre Nós</button>
+    <button class="btn" onclick="showInfo('info2')">Serviços</button>
+    <button class="btn" onclick="showInfo('info3')">Contato</button>
 
-<main id="blog-posts">
+    <div id="info1" class="info-box">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma equipe dedicada a criar sites modernos e funcionais que impressionam e engajam os usuários.</p>
+    </div>
 
-    <article class="post" data-categoria="agricultura">
-        <h2>Como aumentar a produtividade no campo</h2>
-        <p>Aprenda técnicas modernas de agricultura sustentável...</p>
-    </article>
+    <div id="info2" class="info-box">
+        <h2>Serviços</h2>
+        <p>Oferecemos design web, desenvolvimento front-end e back-end, além de consultoria em UX/UI.</p>
+    </div>
 
-    <article class="post" data-categoria="pecuaria">
-        <h2>Melhores práticas na criação de gado</h2>
-        <p>Dicas para manejo eficiente e sustentável de animais...</p>
-    </article>
-
-    <article class="post" data-categoria="tecnologia">
-        <h2>Inovações tecnológicas no agronegócio</h2>
-        <p>Como drones e sensores estão transformando o campo...</p>
-    </article>
-
+    <div id="info3" class="info-box">
+        <h2>Contato</h2>
+        <p>Envie um email para contato@meusite.com ou ligue para (11) 1234-5678.</p>
+    </div>
 </main>
 
-<section id="contato">
-    <h2>Contato</h2>
-    <form onsubmit="enviarFormulario(event)">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" required><br><br>
+<script>
+    function showInfo(id) {
+        // Esconde todas as caixas de informação
+        const boxes = document.querySelectorAll('.info-box');
+        boxes.forEach(box => box.style.display = 'none');
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" required><br><br>
+        // Mostra a caixa selecionada
+        const selectedBox = document.getElementById(id);
+        selectedBox.style.display = 'block';
+    }
+</script>
 
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" rows="4" required></textarea><br><br>
-
-        <button type="submit">Enviar</button>
-    </form>
-</section>
-
-<footer>
-    <p>© 2026 Blog Agrinho</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
