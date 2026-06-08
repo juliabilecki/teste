@@ -3,72 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site Bonito</title>
+    <title>Coco - Site Moderno</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>Meu Site Bonito</header>
+<div class="bg"></div>
 
-<main>
-    <!-- Botões de acessibilidade -->
+<header>
+    <h1>✨ Meu Site Moderno</h1>
+
     <div class="acessibilidade">
-        <button class="btn" onclick="toggleDarkMode()">
-            🌙 Modo Noturno
+        <button class="glass-btn" onclick="toggleDarkMode()">
+            🌙 Tema
         </button>
 
-        <button class="btn" onclick="changeFontSize()">
-            🔠 Ajustar Fonte
+        <button class="glass-btn" onclick="changeFontSize()">
+            🔠 Fonte
         </button>
     </div>
+</header>
 
-    <!-- Botões principais -->
-    <button class="btn" onclick="showInfo('info1')">Sobre Nós</button>
-    <button class="btn" onclick="showInfo('info2')">Serviços</button>
-    <button class="btn" onclick="showInfo('info3')">Contato</button>
+<section class="hero">
+    <h2>Bem-vindo ao futuro</h2>
+    <p>
+        Um exemplo de site moderno com gradientes,
+        animações suaves e acessibilidade.
+    </p>
+</section>
 
-    <div id="info1" class="info-box">
-        <h2>Sobre Nós</h2>
-        <p>Somos uma equipe dedicada a criar sites modernos e funcionais que impressionam e engajam os usuários.</p>
-    </div>
+<section class="cards">
 
-    <div id="info2" class="info-box">
-        <h2>Serviços</h2>
-        <p>Oferecemos design web, desenvolvimento front-end e back-end, além de consultoria em UX/UI.</p>
-    </div>
+    <button class="card" onclick="showInfo('info1')">
+        <span>🚀</span>
+        <h3>Sobre Nós</h3>
+    </button>
 
-    <div id="info3" class="info-box">
-        <h2>Contato</h2>
-        <p>Envie um email para contato@meusite.com ou ligue para (11) 1234-5678.</p>
-    </div>
-</main>
+    <button class="card" onclick="showInfo('info2')">
+        <span>💼</span>
+        <h3>Serviços</h3>
+    </button>
+
+    <button class="card" onclick="showInfo('info3')">
+        <span>📞</span>
+        <h3>Contato</h3>
+    </button>
+
+</section>
+
+<div id="info1" class="info-box">
+    <h2>Sobre Nós</h2>
+    <p>
+        Criamos experiências digitais modernas,
+        rápidas e bonitas para empresas e pessoas.
+    </p>
+</div>
+
+<div id="info2" class="info-box">
+    <h2>Serviços</h2>
+    <p>
+        Desenvolvimento web, UI/UX Design,
+        landing pages e sistemas personalizados.
+    </p>
+</div>
+
+<div id="info3" class="info-box">
+    <h2>Contato</h2>
+    <p>
+        contato@site.com.br
+    </p>
+</div>
 
 <script>
     function showInfo(id) {
-        const boxes = document.querySelectorAll('.info-box');
-        boxes.forEach(box => box.style.display = 'none');
+        document.querySelectorAll('.info-box')
+            .forEach(box => box.classList.remove('show'));
 
-        document.getElementById(id).style.display = 'block';
+        document.getElementById(id).classList.add('show');
     }
 
-    // Modo Noturno
     function toggleDarkMode() {
-        document.body.classList.toggle('dark-mode');
+        document.body.classList.toggle('dark');
     }
 
-    // Controle de fonte
-    let fontSize = 16;
+    let size = 16;
 
     function changeFontSize() {
-        if (fontSize === 16) {
-            fontSize = 20;
-        } else if (fontSize === 20) {
-            fontSize = 24;
+        if(size === 16){
+            size = 19;
+        } else if(size === 19){
+            size = 22;
         } else {
-            fontSize = 16;
+            size = 16;
         }
 
-        document.body.style.fontSize = fontSize + "px";
+        document.body.style.fontSize = size + 'px';
     }
 </script>
 
