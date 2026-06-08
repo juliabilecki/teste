@@ -3,52 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova Vision</title>
+    <title>Concurso Agrinho</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="bg-animation"></div>
-
     <header>
-        <nav>
-            <h1 class="logo">NovaVision</h1>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-
-        <div class="hero">
-            <div class="hero-content">
-                <span>✨ Design do Futuro</span>
-                <h2>Criando experiências digitais memoráveis</h2>
-                <p>
-                    Transformamos ideias em interfaces modernas,
-                    rápidas e impressionantes.
-                </p>
-                <a href="#" class="btn">Explorar</a>
-            </div>
-        </div>
+        <h1>Concurso Agrinho 2026</h1>
+        <p>Participação, educação e cidadania no campo!</p>
     </header>
 
-    <section class="cards">
-        <div class="card">
-            <h3>🚀 Performance</h3>
-            <p>Sites rápidos e otimizados para qualquer dispositivo.</p>
+    <nav>
+        <button onclick="mostrarConteudo('sobre')">Sobre o Concurso</button>
+        <button onclick="mostrarConteudo('inscricao')">Inscrição</button>
+        <button onclick="mostrarConteudo('contato')">Contato</button>
+    </nav>
+
+    <section id="conteudo">
+
+        <div id="sobre">
+            <h2>Sobre o Concurso Agrinho</h2>
+            <p>
+                O Concurso Agrinho incentiva crianças e jovens a refletirem
+                sobre cidadania, meio ambiente e desenvolvimento sustentável.
+            </p>
         </div>
 
-        <div class="card">
-            <h3>🎨 Design</h3>
-            <p>Layouts exclusivos com foco em experiência do usuário.</p>
+        <div id="inscricao" class="hidden">
+            <h2>Inscrição</h2>
+
+            <form onsubmit="enviarFormulario(event)">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" required><br><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" required><br><br>
+
+                <button type="submit">Enviar Inscrição</button>
+            </form>
         </div>
 
-        <div class="card">
-            <h3>⚡ Tecnologia</h3>
-            <p>Soluções modernas utilizando as melhores práticas.</p>
+        <div id="contato" class="hidden">
+            <h2>Contato</h2>
+            <p>Email: contato@agrinho.com.br</p>
+            <p>Telefone: (41) 99999-9999</p>
         </div>
+
     </section>
+
+    <footer>
+        <p>© 2026 Concurso Agrinho</p>
+    </footer>
+
+    <script>
+        function mostrarConteudo(secao) {
+            const secoes = ["sobre", "inscricao", "contato"];
+
+            secoes.forEach(item => {
+                document.getElementById(item).classList.add("hidden");
+            });
+
+            document.getElementById(secao).classList.remove("hidden");
+        }
+
+        function enviarFormulario(event) {
+            event.preventDefault();
+            alert("Inscrição enviada com sucesso!");
+        }
+    </script>
+
 </body>
 </html>
