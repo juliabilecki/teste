@@ -11,7 +11,7 @@ body{
     min-height:100vh;
     color:white;
     font-size:16px;
-    background:#0f172a;
+    background:#182a0f;
     overflow-x:hidden;
     transition:.4s;
 }
@@ -21,7 +21,7 @@ body{
     position:fixed;
     inset:0;
     z-index:-1;
-    background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+    background: linear-gradient(270deg, #9eff6e, #b0f573, #6fde4a, #47fa15);
     background-size: 800% 800%;
     animation: gradientBG 20s ease infinite;
 }
@@ -72,7 +72,7 @@ header h1{
 .hero h2{
     font-size:3rem;
     margin-bottom:10px;
-    background: linear-gradient(90deg, #ff6ec4, #7873f5);
+    background: linear-gradient(90deg, #9eff6e, #96f573);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
