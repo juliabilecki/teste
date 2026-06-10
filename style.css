@@ -21,7 +21,7 @@ body{
     position:fixed;
     inset:0;
     z-index:-1;
-    background: linear-gradient(270deg, #9eff6e, #b0f573, #6fde4a, #47fa15);
+    background: linear-gradient(270deg, #5e9244, #a1df6b, #55af38, #68d04b);
     background-size: 800% 800%;
     animation: gradientBG 20s ease infinite;
 }
