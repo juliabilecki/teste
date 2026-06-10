@@ -72,7 +72,7 @@ header h1{
 .hero h2{
     font-size:3rem;
     margin-bottom:10px;
-    background:#e6ffd8;
+    background:#f7fff3;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
