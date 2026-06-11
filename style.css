@@ -134,6 +134,15 @@ header h1{
     display:none;
 }
 
+.info-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 15px;
+}
+
 .info-box.show{
     display:block;
     animation:fade .4s ease;
