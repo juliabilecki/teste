@@ -164,9 +164,9 @@ body.dark .glass-btn {
     color: white;
 }
 body.dark .bg {
-    background: linear-gradient(270deg, #111, #222, #111, #000);
+    background: #121212 !important;
+    animation: none;
 }
-
 /* Responsivo */
 @media(max-width:768px){
     header{
