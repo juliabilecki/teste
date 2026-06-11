@@ -145,17 +145,19 @@ header h1{
 }
 
 /* Dark Mode */
-.dark{
-    background:#111827;
-    color:white;
+body.dark {
+    background-color: #121212;
+    color: white;
 }
 
-.dark .card,
-.dark .glass-btn,
-.dark .info-box{
-    background: rgba(255,255,255,0.1);
-    color:white;
-    border:1px solid rgba(255,255,255,0.2);
+body.dark .info-box {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.dark .card {
+    background-color: #333;
+    color: white;
 }
 
 /* Responsivo */
