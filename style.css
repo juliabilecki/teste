@@ -163,6 +163,9 @@ body.dark .glass-btn {
     background: rgba(255,255,255,0.2);
     color: white;
 }
+body.dark .bg {
+    background: linear-gradient(270deg, #111, #222, #111, #000);
+}
 
 /* Responsivo */
 @media(max-width:768px){
