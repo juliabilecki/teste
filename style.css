@@ -41,7 +41,7 @@ header{
 }
 
 header h1{
-    font: size 2px;;
+    font: size 2px;
     font-weight:700;
 }
 
@@ -157,6 +157,10 @@ body.dark .info-box {
 
 body.dark .card {
     background-color: #333;
+    color: white;
+}
+body.dark .glass-btn {
+    background: rgba(255,255,255,0.2);
     color: white;
 }
 
