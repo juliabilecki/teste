@@ -27,13 +27,13 @@ inset:0;
 z-index:-1;
 background:linear-gradient(
     270deg,
-    #5e9244,
-    #78b443,
+    #316915,
+    #61a526,
     #55af38,
-    #428c2e
+    #3d6e30
 );
 background-size: 800% 800%;
-animation:gradientBG 12s ease infinite;
+animation:gradientBG 10s ease infinite;
 }
 
 @keyframes gradientBG{
