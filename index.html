@@ -88,6 +88,10 @@ A criação de gado produz metano, um gás que contribui para o aquecimento glob
 function showInfo(id) {
     document.querySelectorAll('.info-box').forEach(box => box.classList.remove('show'));
     document.getElementById(id).classList.add('show');
+    if (box.classList.contains('show')) {
+        box.classList.remove('show');
+        return;
+    }
 }
 
 function toggleDarkMode() {
