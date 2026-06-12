@@ -1,109 +1,199 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agrinho 2026</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-   <button class="glass-btn" onclick="toggleDarkMode()">
+```
+<button class="glass-btn" onclick="toggleDarkMode()">
     🌙 Modo Escuro
 </button>
 
 <div class="bg"></div>
 
 <section class="hero">
+    <h1>Agrinho 2026</h1>
     <h2>Agro forte, futuro sustentável.</h2>
-    <p>Equilíbrio entre produção e meio ambiente.</p>
+    <p>
+        Produzir alimentos, gerar empregos e preservar o meio ambiente
+        são desafios que podem caminhar juntos.
+    </p>
+</section>
+
+<section class="stats">
+
+    <div class="stat">
+        <h2>🌽</h2>
+        <h3>Produção</h3>
+        <p>O Paraná está entre os maiores produtores agrícolas do Brasil.</p>
+    </div>
+
+    <div class="stat">
+        <h2>🚜</h2>
+        <h3>Tecnologia</h3>
+        <p>Uso crescente de máquinas modernas e agricultura de precisão.</p>
+    </div>
+
+    <div class="stat">
+        <h2>🌎</h2>
+        <h3>Exportação</h3>
+        <p>Produtos paranaenses chegam a diversos países.</p>
+    </div>
+
 </section>
 
 <section class="cards">
+
     <button class="card" onclick="showInfo('info1')">
-        <span>​🚜​</span>
+        <span>🚜</span>
         <h3>O que é o Agro</h3>
     </button>
 
     <button class="card" onclick="showInfo('info2')">
-        <span>​🌿​</span>
+        <span>🌿</span>
         <h3>Impactos do Agro</h3>
     </button>
 
     <button class="card" onclick="showInfo('info3')">
-        <span>​​♻️​</span>
-        <h3>Solução sutentável</h3>
+        <span>♻️</span>
+        <h3>Soluções Sustentáveis</h3>
     </button>
+
 </section>
 
 <div id="info1" class="info-box">
-    <h2>O que é o Agro</h2>
-    <p>O agronegócio é um dos setores mais importantes da economia do estado do Paraná. Ele engloba toda a cadeia produtiva relacionada à agropecuária, desde a produção de insumos e o cultivo no campo até o processamento industrial, transporte, comercialização e exportação dos produtos.
-O Paraná está entre os maiores produtores agrícolas do Brasil e se destaca pela elevada produtividade e pelo uso de tecnologia no campo. O setor tem grande relevância porque: 
-Gera milhares de empregos em áreas rurais e urbanas.
-Contribui significativamente para o Produto Interno Bruto (PIB) estadual. 
-Aumenta as vendas de produtos do Paraná para outros países. 
-Fortalece diversos setores da indústria, como a produção de alimentos, bebidas, combustíveis renováveis e o trabalho das cooperativas agrícolas.
 
-Assim, o setor é fundamental para o crescimento econômico e social paranaense.</p>
-<img src="trigo.jpg" class="info-img">
+    <h2>🚜 O que é o Agronegócio?</h2>
+
+    <p>
+        O agronegócio engloba todas as atividades ligadas à produção,
+        processamento e comercialização de produtos agrícolas e pecuários.
+    </p>
+
+    <h3>📈 Importância Econômica</h3>
+
+    <ul>
+        <li>Geração de empregos.</li>
+        <li>Movimentação da economia.</li>
+        <li>Exportação de produtos.</li>
+        <li>Fortalecimento das cooperativas.</li>
+    </ul>
+
+    <h3>🌱 Destaque do Paraná</h3>
+
+    <p>
+        O Paraná é referência nacional pela produtividade,
+        tecnologia e qualidade de seus produtos agrícolas.
+    </p>
+
+    <img src="trigo.jpg" class="info-img" alt="Plantação de trigo">
+
 </div>
 
 <div id="info2" class="info-box">
-    <h2>Impactos do Agro</h2>
-    <p>Mesmo sendo fundamental para a economia paranaense, o agro pode trazer impactos negativos, como:</p>
-    <ul>
-        <li>Desmatamento.
-Quando áreas de florestas são derrubadas para dar lugar a plantações ou pastagens, ocorre perda de biodiversidade, destruição de habitats e aumento das emissões de carbono.</li>
 
-<li>Contaminação do solo e da água
-O uso excessivo de agrotóxicos e fertilizantes pode infiltrar-se no solo ou ser levado pela chuva para rios, lagos e lençóis freáticos, prejudicando animais, plantas e a saúde humana.</li>
+    <h2>🌿 Impactos do Agro</h2>
 
-<li>Erosão e desgaste do solo
-A retirada da vegetação e o manejo inadequado podem fazer com que a chuva e o vento carreguem a camada mais fértil do solo, diminuindo sua qualidade.</li>
+    <h3>🌳 Desmatamento</h3>
+    <p>Reduz habitats naturais e afeta a biodiversidade.</p>
 
-<li>Emissão de gases de efeito estufa
-A criação de gado produz metano, um gás que contribui para o aquecimento global. Além disso, máquinas agrícolas e queimadas também liberam gases poluentes.</li>
-</ul>
-<img src="desmata.jpg" class="info-img">
+    <h3>💧 Contaminação da Água</h3>
+    <p>O uso inadequado de defensivos agrícolas pode atingir rios e lençóis freáticos.</p>
+
+    <h3>🌾 Erosão do Solo</h3>
+    <p>O manejo incorreto diminui a fertilidade do solo.</p>
+
+    <h3>🌡️ Emissão de Gases</h3>
+    <p>Atividades agropecuárias contribuem para o efeito estufa.</p>
+
+    <img src="desmata.jpg" class="info-img" alt="Desmatamento">
+
 </div>
 
 <div id="info3" class="info-box">
-    <h2>Solução sustentável</h2>
-    <p>Para resolver isso e produzir sem causar danos ao meio ambiente é necessário:</p>
-        <ul>
-            <li>Utilizar áreas já abertas ou degradadas em vez de desmatar novas áreas, preservando áreas de vegetação nativa e respeitando a legislação ambiental.</li>
-            <li>Reduzir o uso excessivo de agrotóxicos, utilizando controle biológico de pragas com inimigos naturais dos insetos, e aplicando produtos de forma adequada.</li>
-            <li>Conservar o solo, por meio do plantio direto, da rotação de culturas e da cobertura vegetal.</li>
-            <li>Melhorar a alimentação e o manejo dos animais para reduzir a emissão de metano.</li>
-            <li>Evitar queimadas.</li>
-            <li>Utilizar fontes de energia renovável e tecnologias mais eficientes no campo.</li>
-            <li>Recuperar áreas degradadas e ampliar o plantio de árvores.</li>
-        </ul>
-    <p>Assim, mantendo um equilíbrio entre a produção e o meio ambiente.</p>
-    <img src="sustentavel.jpg" class="info-img">
+
+    <h2>♻️ Soluções Sustentáveis</h2>
+
+    <ul>
+        <li>Plantio direto.</li>
+        <li>Rotação de culturas.</li>
+        <li>Controle biológico de pragas.</li>
+        <li>Uso racional da água.</li>
+        <li>Preservação das matas nativas.</li>
+        <li>Recuperação de áreas degradadas.</li>
+        <li>Uso de energias renováveis.</li>
+    </ul>
+
+    <p>
+        A sustentabilidade garante produção agrícola eficiente
+        sem comprometer os recursos das futuras gerações.
+    </p>
+
+    <img src="sustentavel.jpg" class="info-img" alt="Agricultura sustentável">
+
 </div>
 
+<section class="timeline">
+
+    <h2>🌱 Caminho para a Sustentabilidade</h2>
+
+    <div class="step">
+        <h3>1. Produção</h3>
+        <p>Cultivo responsável dos alimentos.</p>
+    </div>
+
+    <div class="step">
+        <h3>2. Preservação</h3>
+        <p>Proteção dos recursos naturais.</p>
+    </div>
+
+    <div class="step">
+        <h3>3. Tecnologia</h3>
+        <p>Uso eficiente de máquinas e energia.</p>
+    </div>
+
+    <div class="step">
+        <h3>4. Futuro</h3>
+        <p>Garantir alimento e qualidade de vida para todos.</p>
+    </div>
+
+</section>
+
+<footer>
+    <h3>Agrinho 2026</h3>
+    <p>
+        Projeto sobre a importância do agronegócio sustentável para o desenvolvimento do Paraná.
+    </p>
+</footer>
+
 <script>
-function showInfo(id) {
-    const info = document.getElementById(id);
+    function showInfo(id) {
+        const info = document.getElementById(id);
 
-    if (info.classList.contains("show")) {
-        info.classList.remove("show");
-    } else {
-        document.querySelectorAll(".info-box").forEach(box => {
-            box.classList.remove("show");
-        });
+        if (info.classList.contains("show")) {
+            info.classList.remove("show");
+        } else {
+            document.querySelectorAll(".info-box").forEach(box => {
+                box.classList.remove("show");
+            });
 
-        info.classList.add("show");
+            info.classList.add("show");
+        }
     }
-}
 
-
-function toggleDarkMode() {
-    document.body.classList.toggle('dark');
-}
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark");
+    }
 </script>
+```
 
 </body>
+
 </html>
