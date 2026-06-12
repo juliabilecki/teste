@@ -136,11 +136,7 @@ header h1{
 
 .info-img {
     width: 300px;
-    max-width: 600px;
     height: auto;
-    display: block;
-    margin: 15px auto;
-    border-radius: 15px;
 }
 
 .info-box.show{
