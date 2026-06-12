@@ -289,15 +289,17 @@ animation:none;
 
 body.dark .card,
 body.dark .stats {
-    background: #1b1b1b;
-    color: white;
+    background: #1b1b1b !important;
+    color: white !important;
 }
 
 body.dark .stat-item h3,
 body.dark .stat-item p {
-    color: white;
+    color: white !important;
 }
 
+body.dark .divider {
+    background: #555 !important;
 body.dark .divider {
     background: #555;
 }
