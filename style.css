@@ -288,9 +288,18 @@ animation:none;
 }
 
 body.dark .card,
-body.dark .stats{
-background-color: #1b1b1b;
-color: aliceblue;
+body.dark .stats {
+    background: #1b1b1b;
+    color: white;
+}
+
+body.dark .stat-item h3,
+body.dark .stat-item p {
+    color: white;
+}
+
+body.dark .divider {
+    background: #555;
 }
 body.dark .info-box,
 body.dark .step{
