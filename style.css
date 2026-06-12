@@ -130,10 +130,10 @@ opacity:.95;
     height:80px;
     background:#5e9244;
 }
-.stat:hover{
-transform:translateY(-8px);
+.stat-item:hover {
+    transform: translateY(-8px);
+    transition: .3s;
 }
-
 .stat h2{
 font-size:3rem;
 margin-bottom:10px;
