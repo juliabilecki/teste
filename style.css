@@ -288,7 +288,10 @@ animation:none;
 }
 
 body.dark .card,
-body.dark .stat,
+body.dark .stats{
+background-color: #1b1b1b;
+color: aliceblue;
+}
 body.dark .info-box,
 body.dark .step{
 background:rgba(30,30,30,.8);
