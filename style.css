@@ -42,7 +42,7 @@ animation:gradientBG 10s ease infinite;
 100%{background-position:0% 50%;}
 }
 
-/* BOTÃO */
+/* BOTaO */
 
 .glass-btn{
 position:fixed;
@@ -96,7 +96,7 @@ opacity:.95;
     margin:60px auto;
 
     background:white;
-    color:#2f6b22;
+    color:#11665e;
 
     border-radius:25px;
 
