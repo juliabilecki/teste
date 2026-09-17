@@ -128,7 +128,7 @@ opacity:.95;
 .divider{
     width:2px;
     height:80px;
-    background:#5e9244;
+    background:#ffe23c;
 }
 .stat-item:hover {
     transform: translateY(-8px);
