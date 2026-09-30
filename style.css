@@ -33,11 +33,7 @@ a {
 
 .hero {
     min-height: 100vh;
-    background: linear-gradient(
-        135deg,
-        #171717,
-        #343434
-    );
+    background: rgb(126, 3, 3)
     color: white;
 }
 
