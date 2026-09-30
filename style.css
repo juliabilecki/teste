@@ -34,7 +34,7 @@ a {
 .hero {
     min-height: 100vh;
     background: rgb(126, 3, 3)
-    color: white;
+    color white;
 }
 
 .navbar {
@@ -46,11 +46,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.navbar h1 {
-    font-size: 24px;
-    color: #f4c95d;
 }
 
 .navbar ul {
@@ -91,7 +86,7 @@ a {
     object-fit: cover;
 
     border-radius: 50%;
-    border: 6px solid #f4c95d;
+    border: 6px solid white
 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
@@ -101,7 +96,7 @@ a {
 }
 
 .subtitulo {
-    color: #f4c95d;
+    color: white;
     font-size: 18px;
     margin-bottom: 10px;
 }
