@@ -1,0 +1,340 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #171717,
+        #343434
+    );
+    color: white;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 24px;
+    color: #f4c95d;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #f4c95d;
+}
+
+
+/* =========================
+   APRESENTAÇÃO
+========================= */
+
+.hero-content {
+    width: 90%;
+    max-width: 1000px;
+    margin: 100px auto 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.foto img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 6px solid #f4c95d;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.apresentacao {
+    max-width: 550px;
+}
+
+.subtitulo {
+    color: #f4c95d;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.apresentacao h2 {
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+
+.apresentacao p {
+    color: #ddd;
+    font-size: 18px;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 30px;
+
+    padding: 13px 25px;
+
+    background-color: #f4c95d;
+    color: #222;
+
+    border-radius: 30px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.secao {
+    padding: 90px 0;
+}
+
+.secao h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.secao p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+
+/* =========================
+   DESTAQUE / TRAJETÓRIA
+========================= */
+
+.destaque {
+    background-color: #222;
+    color: white;
+}
+
+.destaque h2 {
+    color: white;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin-top: 40px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 70px;
+    top: 0;
+    bottom: 0;
+
+    width: 3px;
+    background-color: #f4c95d;
+}
+
+.evento {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.evento > span {
+    min-width: 70px;
+
+    color: #f4c95d;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.evento h3 {
+    margin-bottom: 8px;
+}
+
+.evento p {
+    color: #ccc;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 35px 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.icone {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   CURIOSIDADES
+========================= */
+
+.curiosidades {
+    background-color: #eaeaea;
+}
+
+.curiosidades ul {
+    list-style: none;
+    max-width: 700px;
+}
+
+.curiosidades li {
+    background-color: white;
+
+    padding: 15px 20px;
+    margin-bottom: 12px;
+
+    border-left: 5px solid #f4c95d;
+    border-radius: 5px;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background-color: #171717;
+    color: #aaa;
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-content {
+        margin-top: 60px;
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .apresentacao h2 {
+        font-size: 42px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .evento {
+        gap: 15px;
+        flex-direction: column;
+        background-color: #2c2c2c;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .secao {
+        padding: 60px 0;
+    }
+}
