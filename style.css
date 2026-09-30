@@ -25,15 +25,7 @@ transition:.4s;
 position:fixed;
 inset:0;
 z-index:-1;
-background:linear-gradient(
-    270deg,
-    #830202,
-    #500202,
-    #4e0404,
-    #8d0404
-);
-background-size: 800% 800%;
-animation:gradientBG 10s ease infinite;
+background: #830202,
 }
 
 @keyframes gradientBG{
