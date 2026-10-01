@@ -138,6 +138,7 @@ a {
 
 .secao {
     padding: 90px 0;
+    background-color: white;
 }
 
 .secao h2 {
@@ -256,6 +257,7 @@ a {
 
 .curiosidades li {
     background-color: white;
+    color: #720808;
 
     padding: 15px 20px;
     margin-bottom: 12px;
