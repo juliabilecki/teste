@@ -152,15 +152,12 @@ a {
     color: #555;
 }
 
-.container {
-    background-color: white;
-}
-
 /* =========================
-   DESTAQUE / TRAJETÓRIA
+   DESTAQUE / OBRAS
 ========================= */
 
 .destaque {
+    padding: 90px 0;
     background-color: #222;
     color: white;
 }
@@ -171,8 +168,72 @@ a {
 
 .obras {
     position: relative;
-    max-width: 800px;
-    margin-top: 40px;
+    max-width: 900px;
+    margin: 50px auto 0;
+
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 30px 40px;
+}
+
+/* Linha vertical da timeline */
+.obras::before {
+    content: "";
+    position: absolute;
+    left: 100px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #f4c95d;
+}
+
+/* Ano */
+.obras > span {
+    color: #f4c95d;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    padding-top: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Conteúdo de cada obra */
+.obras > div {
+    background-color: #2c2c2c;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #f4c95d;
+    position: relative;
+}
+
+/* Bolinha da timeline */
+.obras > div::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: #f4c95d;
+    border: 3px solid #222;
+    border-radius: 50%;
+
+    left: -51px;
+    top: 28px;
+}
+
+.obras h3 {
+    color: #f4c95d;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.obras p {
+    color: #ddd;
+    margin-bottom: 12px;
+}
+
+.obras p:last-child {
+    margin-bottom: 0;
 }
 
 /* =========================
