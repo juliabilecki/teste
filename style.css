@@ -34,3 +34,10 @@ h3 {
 p  {
     color: aliceblue;
 }
+a {
+  color: #b2320b;
+}
+
+a:hover {
+  color: #b2320b;
+}
