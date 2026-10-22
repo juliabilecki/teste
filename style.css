@@ -41,3 +41,7 @@ a {
 a:hover {
   color: #b2320b;
 }
+
+.capa-livro {
+    width: 400px;
+}
