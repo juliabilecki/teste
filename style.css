@@ -1,278 +1,32 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    background-color: #720808;
-    line-height: 1.6;
-}
-
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-/* =========================
-   CABEÇALHO
-========================= */
-
-.hero {
-    min-height: 100vh;
-    background: rgb(121, 4, 4);
-    color: white;
-}
-
-.navbar {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 25px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar ul {
-    display: flex;
-    gap: 25px;
-    list-style: none;
-}
-
-.navbar a {
-    color: white;
-    font-size: 15px;
-    transition: 0.3s;
-}
-
-/* =========================
-   APRESENTAÇÃO
-========================= */
-
-.hero-content {
-    width: 90%;
-    max-width: 1000px;
-    margin: 100px auto 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
-}
-
-.foto img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 6px solid white;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-}
-
-.apresentacao {
-    max-width: 550px;
-}
-
-.subtitulo {
-    color: white;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.apresentacao h2 {
-    font-size: 58px;
-    margin-bottom: 20px;
-}
-
-.apresentacao p {
-    color: #ddd;
-    font-size: 18px;
-}
-
-.botao {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 13px 25px;
-    color: #222;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.botao:hover {
-    background-color: white;
-    transform: translateY(-3px);
-}
-
-
-/* =========================
-   SEÇÕES
-========================= */
-
-.secao {
-    padding: 90px 0;
-    background-color: white;
-}
-
-.secao h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: #222;
-}
-
-.secao p {
-    margin-bottom: 15px;
-    color: #555;
-}
-
-/* =========================
-   DESTAQUE / OBRAS (TIMELINE)
-========================= */
-
-.destaque {
-    padding: 90px 0;
-    background-color: #222;
-    color: white;
-    position: relative;
-}
-
-.destaque h2 {
-    color: white;
-}
-
-.obras {
-    max-width: 900px;
-    margin-top: 40px;
-    position: relative;
-    padding-left: 20px;
-}
-
-/* Linha vertical mantida restritamente à área das obras */
-.obras::before {
-    content: "";
-    position: absolute;
-    left: 170px; /* Alinhada após a imagem da capa */
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background-color: #f4c95d;
-}
-
-.item-obra {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-/* Capa do livro ao lado esquerdo */
-.capa-livro {
-    width: 120px;
-    height: 170px;
-    object-fit: cover;
-    border-radius: 6px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-    flex-shrink: 0;
-    z-index: 1;
-}
-
-.conteudo-obra {
-    background-color: #2c2c2c;
-    padding: 25px;
-    border-radius: 10px;
-    border-left: 4px solid #f4c95d;
-    flex-grow: 1;
-    position: relative;
-}
-
-.obras span.ano {
-    display: block;
-    color: #f4c95d;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-.obras h3 {
-    color: #f4c95d;
-    font-size: 22px;
-    margin-bottom: 12px;
-}
-
-.obras p {
-    color: #ddd;
-    margin-bottom: 12px;
-}
-
-.obras p:last-child {
-    margin-bottom: 0;
-}
-
-
-/* =========================
-   RODAPÉ
-========================= */
-
-footer {
-    background-color: #171717;
-    color: #aaa;
+    background-color: rgb(108, 18, 6);
     text-align: center;
-    padding: 25px;
 }
 
+h1 {
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(246, 246, 232);
+}
 
-/* =========================
-   RESPONSIVIDADE
-========================= */
+h2 {
+    font-style: italic;
+    color: rgb(243, 239, 236);
+}
 
-@media (max-width: 768px) {
+.img1 {
+    width: 50%;
+    text-align: center;
+}
 
-    .navbar {
-        flex-direction: column;
-        gap: 20px;
-    }
+h3 {
+    font-style: italic;
+    color: rgb(255, 254, 254);
+}
 
-    .navbar ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .hero-content {
-        margin-top: 60px;
-        flex-direction: column;
-        text-align: center;
-        gap: 35px;
-    }
-
-    .apresentacao h2 {
-        font-size: 42px;
-    }
-
-    .obras::before {
-        display: none;
-    }
-
-    .item-obra {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .secao {
-        padding: 60px 0;
-    }
+.lista {
+    text-align: left;
+    font-style: italic;
+    text-decoration: overline;
+    color: ghostwhite;
 }
