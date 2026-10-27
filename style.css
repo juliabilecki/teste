@@ -3,20 +3,41 @@ body {
     text-align: center;
 }
 
-h1 {
-    font-style: italic;
-    font-weight: bold;
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.img1 {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.texto-apresentacao {
+    text-align: left;
+}
+
+.texto-apresentacao h1 {
+    font-size: 3rem;
     color: rgb(246, 246, 232);
+    margin: 0 0 15px;
+}
+
+.texto-apresentacao p {
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 h2 {
     font-style: italic;
     color: rgb(243, 239, 236);
-}
-
-.img1 {
-    width: 220px;
-    display: flex;
 }
 
 h3 {
