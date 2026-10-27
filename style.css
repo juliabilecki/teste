@@ -55,58 +55,81 @@ p {
     margin-bottom: 20px;
 }
 
-/* Lista de Livros (Layout Flexbox) */
+/* Lista de obras */
 .lista {
-    list-style: none; /* Remove as bolinhas da lista */
+    list-style: none;
     padding: 0;
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: 30px auto;
     text-align: left;
 }
 
-/* Cada Item da Lista (Livro) */
+/* Cada livro */
 .item-livro {
-    display: flex; /* Coloca capa e texto lado a lado */
+    display: flex;
     align-items: flex-start;
-    gap: 25px; /* Espaço entre a capa e o texto */
-    background-color: rgba(0, 0, 0, 0.25); /* Fundo sutil para destacar os cards */
-    padding: 20px;
+    gap: 30px;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 25px;
     margin-bottom: 30px;
     border-radius: 10px;
 }
 
-/* Capa dos Livros */
+/* Capas à esquerda */
 .capa-livro {
-    width: 200px; /* Tamanho proporcional para o layout de lado a lado */
+    width: 220px;
     height: auto;
     border-radius: 5px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    flex-shrink: 0; /* Impede que a imagem encolha */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
 }
 
-/* Área do texto ao lado da capa */
+/* Texto à direita */
 .info-livro {
     flex: 1;
+    min-width: 0;
 }
 
+/* Títulos maiores */
 .info-livro h4 {
     color: #ffd700;
-    font-size: 1.6rem;
-    margin-top: 0;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 15px;
 }
 
+/* Sinopse */
 .info-livro p {
-    font-size: 1.15rem; /* Texto maior para legibilidade */
-    margin-bottom: 12px;
+    color: aliceblue;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
 }
 
-.citacao {
+/* Citações */
+.info-livro .citacao {
     font-style: italic;
     color: #e2e2e2;
     background-color: rgba(255, 255, 255, 0.08);
     border-left: 4px solid #ffd700;
-    margin: 10px 0 0 0;
-    padding: 10px 15px;
-    font-size: 1.05rem;
+    padding: 12px 15px;
+    margin-top: 15px;
+}
+
+/* Adaptação para celulares */
+@media (max-width: 600px) {
+    .item-livro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .capa-livro {
+        width: 70%;
+        max-width: 220px;
+    }
+
+    .info-livro h4 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
 }
