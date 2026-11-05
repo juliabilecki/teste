@@ -159,6 +159,13 @@ p {
 .narnia {
     color: aliceblue;
     width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.narnia h5 {
+    font-size: 3rem;
+    color: #e2e2e2;
 }
 
 .conteudo-narnia {
@@ -172,16 +179,17 @@ p {
     width: 250px;
     height: auto;
     flex-shrink: 0;
+    border-radius: 10px;
 }
 
 .texto-narnia {
     flex: 1;
-    min-width: 0;
-    width: 100%;
     text-align: justify;
+    min-width: 0;
 }
 
 .texto-narnia p {
+    font-size: 1.15rem;
     line-height: 1.7;
 }
 
@@ -190,5 +198,5 @@ p {
 }
 
 .texto-narnia li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
