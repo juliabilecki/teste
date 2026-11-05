@@ -156,47 +156,106 @@ p {
     }
 }
 
+
+/* NÁRNIA - MESMO ESTILO DAS PRINCIPAIS OBRAS */
+
 .narnia {
-    color: aliceblue;
     width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+    margin: 40px auto;
+    color: aliceblue;
+    text-align: left;
 }
 
-.narnia h5 {
+/* Título */
+.narnia h3 {
+    text-align: center;
+    font-style: italic;
+    color: white;
     font-size: 3rem;
-    color: #e2e2e2;
+    margin-bottom: 30px;
 }
 
-.conteudo-narnia {
+/* Cartão principal */
+.item-narnia {
     display: flex;
     align-items: flex-start;
     gap: 30px;
+
+    background-color: rgba(0, 0, 0, 0.25);
+
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+
     width: 100%;
+    box-sizing: border-box;
 }
 
+/* Capa */
 .capa-narnia {
-    width: 250px;
+    width: 220px;
     height: auto;
     flex-shrink: 0;
-    border-radius: 10px;
+
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.texto-narnia {
+/* Informações */
+.info-narnia {
     flex: 1;
-    text-align: justify;
     min-width: 0;
+    text-align: justify;
 }
 
-.texto-narnia p {
-    font-size: 1.15rem;
+/* Título da lista */
+.info-narnia h4 {
+    color: #ffd700;
+    font-size: 2rem;
+    margin: 15px 0;
+}
+
+/* Parágrafos */
+.info-narnia p {
+    color: aliceblue;
+    font-size: 1.1rem;
     line-height: 1.7;
 }
 
-.texto-narnia ul {
-    padding-left: 20px;
+/* Lista */
+.info-narnia ul {
+    list-style: none;
+    padding: 0;
 }
 
-.texto-narnia li {
-    margin-bottom: 12px;
+.info-narnia li {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-left: 4px solid #ffd700;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: ghostwhite;
+    transition: 0.3s;
+}
+
+.info-narnia li:hover {
+    background-color: rgba(255, 255, 255, 0.16);
+    transform: translateX(5px);
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    .item-narnia {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .capa-narnia {
+        width: 70%;
+        max-width: 220px;
+    }
+
+    .info-narnia h4 {
+        text-align: center;
+    }
 }
